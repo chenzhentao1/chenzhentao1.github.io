@@ -1,0 +1,54 @@
+body{
+	margin: 0 auto;
+	width: 1200px;
+}
+p,ul,li{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	width: 630px;
+	list-style: none;
+	float: left;
+/*清除li浮动带来的影响*/
+	/*overflow: hidden;*/
+}
+ul li{
+	width: 200px;
+	box-shadow: 2px 2px 5px black;
+	margin: 5px;
+	float: left;
+	text-align: center;
+}
+/*清除li浮动带来的影响*/
+body:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+ul li img{
+	width: 100%;
+}
+body>p{
+	background-color: orange;
+}
+body>div{
+	width: 300px;
+	float: left;
+	border: 1px solid black;
+	margin: 10px 50px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+table th,td{
+	border: 1px solid yellowgreen;
+}
+table th{
+	border-bottom: 5px double red;
+}
+.total{
+	text-align: right;
+	/*margin: 0;*/
+}

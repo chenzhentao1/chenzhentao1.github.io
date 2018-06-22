@@ -1,0 +1,11 @@
+.navbar-brand {
+    width: 100%;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+form {
+    padding: 0 15px;
+}

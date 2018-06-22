@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- register -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <!-- <div class=""> -->
+        <div class="navbar-header navbar-brand text-center">
+            <span id="back" class="glyphicon glyphicon-arrow-left
+                 pull-left"></span>个人资料
+            <span class="glyphicon glyphicon-home
+                pull-right" id="register"></span>
+            <div class="clearfix"></div>
+        </div>
+        <!-- </div> -->
+    </nav>
+    <!-- <form class="container"> -->
+    <form>
+        <div class="form-group">
+            <input required="required" type="file" name="photo">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="上传头像" class="btn btn-success form-control">
+        </div>
+    </form>
+    <!-- <h2>创建模态框（Modal）</h2> -->
+    <!-- 按钮触发模态框 -->
+    <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button> -->
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">智游教育</h4>
+                </div>
+                <div class="modal-body">在这里添加一些文本</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                    <!-- <button type="button" class="btn btn-primary">提交更改</button> -->
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/information.js"></script>
+</body>
+
+</html>

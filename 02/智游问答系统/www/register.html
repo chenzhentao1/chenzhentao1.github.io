@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- register -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <!-- <div class=""> -->
+        <div class="navbar-header navbar-brand text-center">
+            <span id="back" class="glyphicon glyphicon-arrow-left
+                 pull-left"></span> 注册
+            <span class="glyphicon glyphicon-home 
+                pull-right" id="home"></span>
+            <div class="clearfix"></div>
+        </div>
+        <!-- </div> -->
+    </nav>
+    <!-- <form class="container"> -->
+    <form>
+        <div class="form-group">
+            <!-- required="required"必填 -->
+            <!-- pattern="[\u4E00-\u9FA5]{2,10}"匹配中文 -->
+            <input type="text" required="required" pattern="^[\u4E00-\u9FA5]{2,10}$" name="user" placeholder="请输入用户名" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" required="required" pattern="^\w{6,16}$" name="password" placeholder="请输入密码" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" required="required" name="passwordTo" placeholder="请再次输入密码" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="radio" name="sex" checked value="先生"> 先生 <br />
+            <input type="radio" name="sex" value="女士"> 女士
+        </div>
+        <!-- <div class="form-group">
+            <input type="radio" name="sex">女士
+        </div> -->
+        <div class="form-group">
+            <input type="email" required="required" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" name="email" placeholder="请填写邮箱" class="form-control">
+        </div>
+        <div class="form-group">
+            <select name="operator" class="form-control">
+                <option value="Android">Android</option>
+                <option value="h5" selected="selected">h5</option>
+                <option value="IOS">IOS</option>
+                <option value="java">java</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="注册" class="btn btn-success form-control">
+        </div>
+    </form>
+    <!-- <h2>创建模态框（Modal）</h2> -->
+    <!-- 按钮触发模态框 -->
+    <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button> -->
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">智游教育</h4>
+                </div>
+                <div class="modal-body">在这里添加一些文本</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                    <!-- <button type="button" class="btn btn-primary">提交更改</button> -->
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/register.js"></script>
+</body>
+
+</html>
